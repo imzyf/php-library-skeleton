@@ -1,34 +1,39 @@
 {
     "name": "imzyf/php-library-skeleton",
-    "description": "PHP8 Composer",
+    "description": "PHP8 Composer Library Skeleton",
+    "license": "MIT",
     "type": "library",
+    "keywords": ["php8", "skeleton", "composer" ],
+    "homepage": "https://zyf.im",
     "authors": [
         {
             "name": "zhaoyifan",
-            "email": "168@yifans.com"
+            "email": "168@yifans.com",
+            "homepage": "https://zyf.im"
         }
     ],
     "require": {
-        "php": "^8.1.0"
+        "php": "^8"
     },
     "require-dev": {
-        "phpunit/phpunit": "^10.0",
-        "symfony/var-dumper": "^6.2",
         "friendsofphp/php-cs-fixer": "^3.14",
-        "phpstan/phpstan": "^1.10"
+        "phly/keep-a-changelog": "^2.12",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.0",
+        "ramsey/conventional-commits": "^1.3",
+        "symfony/var-dumper": "^6.2"
     },
-    "config": {
-        "optimize-autoloader": true,
-        "sort-packages": true,
-        "preferred-install": {
-            "*": "dist"
-        }
+    "suggest": {
+
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+
     "autoload": {
         "classmap": [
         ],
         "psr-4": {
-            "Dev\\Lizhi\\": "./src"
+            "Lizhi\\Dev\\": "./src"
         },
         "files": [
 
@@ -38,11 +43,22 @@
         "classmap": [
         ],
         "psr-4": {
-            "Tests\\Lizhi\\": "./tests"
+            "Lizhi\\Tests\\": "./tests"
         },
         "files": [
         ]
     },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "extra": {},
     "scripts": {
         "fmt": [
             "@php vendor/bin/php-cs-fixer fix"
@@ -55,6 +71,7 @@
             "@php ./vendor/bin/phpstan --memory-limit=4096M --generate-baseline='.phpstan/phpstan-baseline.neon'"
         ]
     },
+    "scripts-descriptions": {},
     "repositories": [
         {
             "type": "composer",
