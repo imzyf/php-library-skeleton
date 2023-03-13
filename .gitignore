@@ -1,0 +1,11 @@
+.idea
+/.phpunit.cache/
+/vendor/
+/test/.env
+/composer.lock
+/phpstan.neon
+/phpstan-report.json
+/esc-report.json
+/phpunit-report.xml
+/tests/.env
+/unresolved-todos-report.xml
