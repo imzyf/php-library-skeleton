@@ -1,5 +1,5 @@
 {
-    "name": "imzyf/php-library-skeleton",
+    "name": "lizhi-dev/php-library-skeleton",
     "description": "PHP8 Composer Library Skeleton",
     "license": "MIT",
     "type": "library",
@@ -20,13 +20,7 @@
         "php": "^8"
     },
     "require-dev": {
-        "captainhook/captainhook": "^5.15",
         "friendsofphp/php-cs-fixer": "^3.14",
-        "mockery/mockery": "^1.5",
-        "phly/keep-a-changelog": "^2.12",
-        "phpstan/phpstan": "^1.10",
-        "phpunit/phpunit": "^9.0",
-        "ramsey/conventional-commits": "^1.3",
         "ramsey/devtools": "^1.7",
         "symfony/var-dumper": "^6.2"
     },
