@@ -1,5 +1,5 @@
 {
-    "name": "lizhi-dev/php-library-skeleton",
+    "name": "lizhi-dev/library-skeleton",
     "description": "PHP8 Composer Library Skeleton",
     "license": "MIT",
     "type": "library",
