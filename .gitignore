@@ -9,3 +9,4 @@
 /phpunit-report.xml
 /tests/.env
 /unresolved-todos-report.xml
+.phpunit.cache

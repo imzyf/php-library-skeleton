@@ -16,6 +16,11 @@
 
 ## About
 
+## Usage
+
+```bash
+composer create-project lizhi-dev/library-skeleton YOUR-PROJECT-NAME
+```
 
 ## References
 
